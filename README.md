@@ -17,7 +17,27 @@ J'ai utilisé le machine learning (ML) pour donner à ma carte Arduino la capaci
 ![image](https://github.com/aminabenj/code/assets/148441485/525f55ec-a790-4996-afcc-87d7cbd5b7ab)
 # ces projets 2,3 et 4 sont réalisés par moi meme BENJIMA Amina et Marie christ TOBADA (vu que sa carte arduino ne marche plus)
 # Projet 2 : 
+Notre projet 2 consiste en la création d'un modèle de machine learning (ML) pour identifier des mots-clés spécifiques ("rouge", "vert", "jaune") dans la parole.
+Etapes de réalisation : 
+1. Création d'un jeu de données : Sur Edge Impulse, nous avons enregistré des échantillons sonores en prononçant les mots-clés à l'aide d'un microphone intégré en Arduino Nano 33 Ble.
+Chaque échantillon durait 1 secondes, avec une fréquence de 16 000 Hz. Nous avons également enregistré 21 échantillons de silence pour aider notre modèle à reconnaître l'absence de mots-clés.
+![Liste des échantillons enregistrés](https://github.com/aminabenj/code/assets/148441485/4b06ba27-5fcb-4a5c-9d64-a34611eff728)
 
+2. Collecte des données : Pour chaque mot-clé, nous avons collecté au moins 15 échantillons, en veillant à varier les prononciations, accents et intonations. Nous avons ensuite examiné et filtré les enregistrements pour éliminer tout bruit de fond.
+![echanti](https://github.com/aminabenj/code/assets/148441485/3a18a651-0850-42e1-9873-4b25ba4f2641)
+
+3. Conception d'une impulsion : Nous avons défini la manière dont notre modèle ML traiterait les données. Cela a inclus l'ajout de blocs de traitement audio et de classification sur Edge Impulse.
+![Concevoir une impulsion](https://github.com/aminabenj/code/assets/148441485/1dd36f43-83e5-4425-a995-05740085a29e)
+
+4. Génération de fonctionnalités : Nous avons extrait les caractéristiques uniques de chaque enregistrement pour les utiliser dans l'algorithme de classification.
+
+Entraînement du modèle ML : Nous avons entraîné le modèle sur Edge Impulse, ajustant les paramètres en fonction des résultats de validation pour atteindre une haute précision.
+
+Déploiement du modèle ML : Nous avons déployé le modèle sur une carte Nano 33 BLE Sense en créant une bibliothèque Arduino, que nous avons ensuite intégrée dans l'IDE Arduino.
+
+Test du modèle : À l'aide du moniteur série de l'Arduino, nous avons testé le modèle pour vérifier la précision dans la détection des mots-clés.
+
+En conclusion, notre projet a illustré une application concrète du ML dans la reconnaissance de parole, mettant l'accent sur la collecte de données variées et précises, l'entraînement rigoureux d'un modèle, et son déploiement réussi sur un dispositif embarqué.
 # Projet 3 : Projet de Classification des Mouvements et Détection des Anomalies
 Ce projet, réalisé dans le cadre d'un cours d'apprentissage automatique embarqué, a pour objectif de développer un système capable de classifier le mouvement et les vibrations d'une machine et de détecter des anomalies dans son fonctionnement. L'application pratique de ce projet vise à utiliser l'apprentissage automatique dans un environnement industriel pour identifier différents états opérationnels d'une machine (par exemple, éteint, allumé, charge faible, charge élevée, anomalie, etc.).
 1. Configuration Initiale:
@@ -35,22 +55,36 @@ Ce projet, réalisé dans le cadre d'un cours d'apprentissage automatique embarq
    ![acquisition de données](https://github.com/aminabenj/code/assets/148441485/ad41eaf8-efd2-432e-b6ab-050b8215473f)
    
 5. Entraînement du Modèle :
-   Un modèle de réseau neuronal a été entraîné avec les données étiquetées. Des blocs de détection d'anomalies K-means ont également été utilisés. L'entraînement a impliqué 
+   Un modèle de réseau neuronal a été entraîné avec les données étiquetées. Des blocs de détection d'anomalies K-means ont également été utilisés. 
+   L'entraînement a impliqué 
    l'ajustement des hyperparamètres pour améliorer la précision du modèle tout en évitant le surajustement.
    ![entité](https://github.com/aminabenj/code/assets/148441485/667b2383-9df6-4a01-8503-5c99072deee5)
 
    ![Entrainement_modèle](https://github.com/aminabenj/code/assets/148441485/71a264dd-aa10-4f17-bbae-ab007073159b)
    
    ![Entrainement_modèle_1](https://github.com/aminabenj/code/assets/148441485/b44a35cd-f410-4e17-ae40-f1caf8fa7717)
+    Anomalie :
+    ![detection_anomalie](https://github.com/aminabenj/code/assets/148441485/5259632d-0c90-4ee8-9cd8-0ef40e21f1bd)
+
+    ![detection_anomalie_1](https://github.com/aminabenj/code/assets/148441485/16924968-fa64-4c85-916d-d59c2037e18a)
+
    
-6. Test du Modèle : 
+7. Test du Modèle : 
    Le modèle formé a été testé avec un nouvel ensemble de données pour évaluer sa précision et sa capacité à généraliser.
    ![test de modèle](https://github.com/aminabenj/code/assets/148441485/d18d2e4c-56cd-4da1-9db1-c4caf2a6a227)
    
 8. Déploiement :
    Le modèle final a été déployé sur Arduino.
-   Le dispositif a été testé dans des conditions réelles pour valider sa performance dans la classification des états opérationnels de la machine et la détection d'anomalies.
+   Le dispositif a été testé dans des conditions réelles pour valider sa performance dans la classification des états opérationnels de la machine et la 
+   détection d'anomalies.
    ![deploiement](https://github.com/aminabenj/code/assets/148441485/432de8dd-3f9d-479c-a78d-30c667c37571)
+   ![bibliothèque_arduino](https://github.com/aminabenj/code/assets/148441485/f598ac60-a14d-4750-ab49-30c6b5171764)
+
+9. Résultat :
+   ![machine_Eteint](https://github.com/aminabenj/code/assets/148441485/ac3a6a87-2d1f-43d1-aaf5-fd9f344953e8)
+   ![charge_legere](https://github.com/aminabenj/code/assets/148441485/87ffe162-87f7-489a-b768-c14f6bc1cffc)
+   ![charge lourde](https://github.com/aminabenj/code/assets/148441485/0fcf78b7-8141-4a1d-a258-361de73fdb40)
+
 
 Pour conclure, ce projet illustre l'application de l'apprentissage automatique embarqué dans un contexte industriel. Il démontre la capacité de classifier différents états d'une machine et de détecter des anomalies sans modification physique de la machine elle-même. Le projet souligne également l'importance de l'expérimentation et de l'ajustement dans le développement de modèles d'apprentissage automatique.
 

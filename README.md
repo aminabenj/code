@@ -15,7 +15,7 @@ Enfin, pour implémenter un quiz interactif, j'ai programmé la carte pour affic
 En suivant les étapes suivante : https://docs.arduino.cc/tutorials/nano-33-ble-sense/get-started-with-machine-learning
 J'ai utilisé le machine learning (ML) pour donner à ma carte Arduino la capacité de reconnaître des gestes. Pour ce faire, j'ai capturé des données de mouvement à l'aide de ma carte Arduino Nano 33 BLE Sense, puis je les ai importées dans TensorFlow pour entraîner un modèle de classification. Une fois le modèle entraîné, je l'ai déployé sur la carte Arduino pour qu'elle puisse identifier les gestes en temps réel.
 ![image](https://github.com/aminabenj/code/assets/148441485/525f55ec-a790-4996-afcc-87d7cbd5b7ab)
-# ces projets 2,3 et 4 sont réalisés par moi meme BENJIMA Amina et Marie christ TOBADA (vu que sa carte arduino ne marche plus)
+# "Ces projets 2, 3 et 4 ont été réalisés par moi-même, Amina Benjima, ainsi que par Marie-Christ Tobada, étant donné que sa carte Arduino ne fonctionnait plus."
 # Projet 2 : 
 Notre projet 2 consiste en la création d'un modèle de machine learning (ML) pour identifier des mots-clés spécifiques ("rouge", "vert", "jaune") dans la parole.
 

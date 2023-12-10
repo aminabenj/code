@@ -119,7 +119,7 @@ L'objectif est d'élargir cet ensemble pour renforcer la fiabilité du modèle e
 
 https://studio.edgeimpulse.com/studio/309664/learning/keras/5
 
-# Projet B : 
+# Projet B : système de comptage de composants électroniques
 Le projet est un système de comptage de composants électroniques basé sur la reconnaissance et la classification d'images, utilisant une carte Arduino Nano 33 BLE, une caméra OV7670, Edge Impulse pour le Deep Learning, et Node-RED pour le traitement des données. 
 Voici les étapes clés pour réaliser ce projet :
 1. Edge Impulse pour créer et entraîner un modèle de reconnaissance d'image.

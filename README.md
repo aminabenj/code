@@ -143,7 +143,6 @@ Voici les étapes clés pour réaliser ce projet :
    J'ai telecharger les bibliothèques necessaire
    ![image](https://github.com/aminabenj/code/assets/148441485/280d7f50-757c-4070-bc0a-c6f87653e89a)
    
-   ![image](https://github.com/aminabenj/code/assets/148441485/00aac5ea-3d5f-4fa9-aedf-ef7eec2e67d4)
 
    ![image](https://github.com/aminabenj/code/assets/148441485/5cd30814-6ae0-46fd-b584-f3d4e9d5dd56)
 

@@ -119,5 +119,30 @@ L'objectif est d'élargir cet ensemble pour renforcer la fiabilité du modèle e
 
 https://studio.edgeimpulse.com/studio/309664/learning/keras/5
 
+# Projet B : 
+Le projet est un système de comptage de composants électroniques basé sur la reconnaissance et la classification d'images, utilisant une carte Arduino Nano 33 BLE, une caméra OV7670, Edge Impulse pour le Deep Learning, et Node-RED pour le traitement des données. 
+Voici les étapes clés pour réaliser ce projet :
+1. Edge Impulse pour créer et entraîner un modèle de reconnaissance d'image.
+   En utilisant le modèle du projet 4
+   ![image](https://github.com/aminabenj/code/assets/148441485/4489c1c6-9e60-484a-bd3f-a4517f2682f7)
+   j'ai testé et ajuster le modèle pour assurer une bonne précision de classification.
+   ![image](https://github.com/aminabenj/code/assets/148441485/41600b00-f2d6-4f60-a60e-c018bb35d85a)
+   j'ai télechargé le modèle sur la carte arduino Nano 33 Ble
+   ![image](https://github.com/aminabenj/code/assets/148441485/b32f7f30-44a0-4c64-b81d-298bc86deb72)
+
+   Puis j'ai utilisé un exemple de programme pour Arduino qui utilise la caméra OV7670 pour capturer des images des composants.
+   ![image](https://github.com/aminabenj/code/assets/148441485/439ad7dc-9755-4877-879b-f752762b3704)
+   
+   Et puis j'ai Configuré la communication BLE entre l'Arduino et l'ordinateur en exécutant Node-RED.
+   Pour envoyer les données de classification du composant à Node-RED via BLE.
+   J'ai telecharger les bibliothèques necessaire
+   ![image](https://github.com/aminabenj/code/assets/148441485/280d7f50-757c-4070-bc0a-c6f87653e89a)
+   
+   ![image](https://github.com/aminabenj/code/assets/148441485/00aac5ea-3d5f-4fa9-aedf-ef7eec2e67d4)
+
+
+   
+
+
 
 

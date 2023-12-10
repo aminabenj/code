@@ -133,13 +133,19 @@ Voici les étapes clés pour réaliser ce projet :
    Puis j'ai utilisé un exemple de programme pour Arduino qui utilise la caméra OV7670 pour capturer des images des composants.
    ![image](https://github.com/aminabenj/code/assets/148441485/439ad7dc-9755-4877-879b-f752762b3704)
    
-   Et puis j'ai Configuré la communication BLE entre l'Arduino et l'ordinateur en exécutant Node-RED.
-   Pour envoyer les données de classification du composant à Node-RED via BLE.
+   En mettant en place un programme pour capturer des images avec le OV7675, effectuer l'inférence avec le modèle Edge Impulse, et ensuite envoyer la classe la 
+   plus probable via Bluetooth à l'aide de BLE.
+   voilà l'affiche du Serial Monitor :
+   ![image](https://github.com/aminabenj/code/assets/148441485/d02b7165-f27e-48d3-b5cb-d6a0fabbde53)
+   Malheureusement je ne pourais pas capturer des images à cause de la camera qui ne marche pas dans mon kit.
+   
+   Partie Nodered : 
    J'ai telecharger les bibliothèques necessaire
    ![image](https://github.com/aminabenj/code/assets/148441485/280d7f50-757c-4070-bc0a-c6f87653e89a)
    
    ![image](https://github.com/aminabenj/code/assets/148441485/00aac5ea-3d5f-4fa9-aedf-ef7eec2e67d4)
 
+   ![image](https://github.com/aminabenj/code/assets/148441485/5cd30814-6ae0-46fd-b584-f3d4e9d5dd56)
 
    
 

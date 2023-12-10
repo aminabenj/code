@@ -143,8 +143,15 @@ Voici les étapes clés pour réaliser ce projet :
    J'ai telecharger les bibliothèques necessaire
    ![image](https://github.com/aminabenj/code/assets/148441485/280d7f50-757c-4070-bc0a-c6f87653e89a)
    
-
    ![image](https://github.com/aminabenj/code/assets/148441485/5cd30814-6ae0-46fd-b584-f3d4e9d5dd56)
+Création d'un Flux pour Recevoir les Données BLE:
+   En glissant le nœud BLE que nous venez d'installer sur votre espace de travail.
+   En le Configurant pour qu'il se connecte à l'appareil Arduino.
+   ![image](https://github.com/aminabenj/code/assets/148441485/087074a0-2dbf-4961-bbc2-8e8afe2b5f15)
+   ![image](https://github.com/aminabenj/code/assets/148441485/7e024181-dcfc-48d8-95ed-2460afc66c32)
+   ![image](https://github.com/aminabenj/code/assets/148441485/da711cbd-7f4f-4ca8-a22d-66993ccd7089)
+
+
 
    
 
